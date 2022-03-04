@@ -1,0 +1,22 @@
+{
+  "name": "mojgenie",
+  "version": "1.0.0",
+  "description": "Login page with bootstrap 5 and sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Bootstrap",
+    "bootstrap-v5",
+    "sass",
+    "learn-bootstrap",
+    "learn",
+    "sass"
+  ],
+  "author": "Said mohammed rashid",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

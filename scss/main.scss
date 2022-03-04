@@ -1,0 +1,108 @@
+$muted: #9fa3a7 !important;
+$f26a44: #f26a44;
+$fff: #ffffff;
+$light: #f0f4f7;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../popins-webfontkit/poppins-regular-webfont.woff2') format('woff2'),
+         url('../popins-webfontkit/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('../popins-webfontkit/poppins-medium-webfont.woff2') format('woff2'),
+         url('../popins-webfontkit/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('../popins-webfontkit/poppins-bold-webfont.woff2') format('woff2'),
+         url('../popins-webfontkit/poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*{
+    outline: none !important;
+    box-shadow: none !important;
+    font-family: 'poppinsregular';
+}
+
+h3{
+    font-family: 'poppinsbold';
+}
+a{
+    text-decoration: none;
+}
+
+label{
+    font-size: 14px;
+}
+.bg-faf6f5{
+    background-color: #faf6f5;
+    position: relative;
+
+    @media (max-width: 767px){
+        background-image: linear-gradient(#faf6f5 75%, #fff 0%);
+    }
+
+    p{
+        font-weight: 600;
+        font-size: 14px;
+    }
+    
+    img{
+        width: 70%;
+        position: absolute;        
+        top: 50%;
+        left: 74%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        @media (max-width: 767px) {
+            position: unset;        
+            top: unset;
+            left: unset;
+            -webkit-transform: unset;
+            transform: unset;
+            width: 50%;
+        }
+
+    }
+}
+.btn-outline-light{
+    color: #212529;
+}
+
+.text-muted {
+    color: $muted;
+}
+
+.mb-3 label{
+    font-weight: 600;
+}
+
+hr{
+    height: 3px !important;
+}
+.checked{
+    background-color: #69cc98;
+    opacity: 100%;
+}
+.btn-f26a44{
+    background-color: $f26a44;
+    color: $fff;
+    font-family: 'poppinsmedium';
+}
