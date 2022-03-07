@@ -1,0 +1,465 @@
+body {
+	overflow-x: hidden;
+}
+
+.md-modal {
+  margin: auto;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  width: 50%;
+  max-width: 630px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.md-show {
+  visibility: visible;
+}
+.md-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  background: rgba(228, 240, 227, 0.8);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.md-show ~ .md-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.md-effect-12 .md-content {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.md-show.md-effect-12 ~ .md-overlay {
+  background-color: #e4f0e3;
+}
+.md-effect-12 .md-content h3, .md-effect-12 .md-content {
+  background: transparent;
+}
+.md-show.md-effect-12 .md-content {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.fade-in {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.fade-out {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+.close {
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+font-family: 'HelvLight Regular';
+font-style: normal;
+font-weight: normal;
+src: local('HelvLight Regular'), url('../font/HELN.woff') format('woff');
+}
+
+
+
+
+button:active, button:focus {
+outline: 0 !important;
+-moz-outline-style: none;
+box-shadow: none !important;
+}
+input:active, input:focus {
+outline: 0 !important;
+-moz-outline-style: none;
+box-shadow: none !important;
+}
+a:hover {
+	text-decoration: none;
+}
+
+section {
+	height: 100vh !important;
+	width: 100%;
+}
+p {
+	font-family: 'HelvLight Regular';
+	font-size: 14px;
+}
+
+
+h1 {
+	font-family: 'HelvLight Regular';
+	font-weight: 400;
+	font-size: 48px;
+	letter-spacing: 2px;
+}
+h1 span {
+	font-size: 15px;
+}
+
+h6 {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+}
+
+
+section#one {
+	background-image: url(../images/banner2.png), url(../images/banner.png), url(../images/bannercorn.png);
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-position: center, right, top left;
+	background-size: 100%, auto 100%, auto;
+	background-attachment: local, fixed, scroll;
+	color: #000;
+	display: table;
+}
+.ml-15 {
+	margin-left: 6rem;
+}
+
+.btn-cd:hover {
+	-moz-box-shadow: 0 0 8px #000;
+	-webkit-box-shadow: 0 0 8px #000;
+	box-shadow: 0px 0 8px #000;
+    color: #fff;
+}
+.btn-link:hover {
+	text-decoration: none;
+	color: #383838;
+	-moz-box-shadow: 0 0 8px #000;
+	-webkit-box-shadow: 0 0 8px #000;
+	box-shadow: 0px 0 8px #000;
+}
+.one {
+	display: table-cell;
+	vertical-align: middle;
+}
+.badge {
+	font-weight: normal;
+}
+.red {
+	color: #ba2a29;
+}
+.btn-cd {
+	background-color: #3f3f3f;
+	color: #fff;
+	font-size: 15px;
+
+}
+.btn-link {
+	color: #383838;
+}
+.badge-light {
+	background-color: #fff;
+	border: 1px dashed #e5e5e5;
+	-webkit-box-shadow: 1px 6px 25px -5px rgba(0,0,0,0.30);
+-moz-box-shadow: 1px 6px 25px -5px rgba(0,0,0,0.30);
+box-shadow: 1px 6px 25px -5px rgba(0,0,0,0.30);
+}
+section#two {
+	display: table;
+}
+.two {
+	display: table-cell;
+	vertical-align: middle;
+}
+section#two h3 {
+	color: #a82828;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+.top-line {
+	padding-top: 30px;
+}
+.card {
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	display: table;
+}
+.card img {
+	width: 20%;
+}
+.card-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+.card:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.1),0 10px 10px rgba(0,0,0,0.1);
+	z-index: 1;
+}
+.card-img-top {
+	width: auto;
+	height: auto;
+}
+section#three {
+	display: table;
+	background-image: url(../images/shape3.png), url(../images/backthree.png);
+	background-repeat: no-repeat,no-repeat;
+	background-position: right top,left center;
+	background-size: auto, 50%;
+}
+.three {
+	display: table-cell;
+	vertical-align: middle;
+	
+}
+
+section#four {
+	display: table;
+}
+.four {
+	display: table-cell;
+	vertical-align: middle;
+}
+.box {
+	border: 1px solid #eee;
+	height: 500px;
+	width: 200px;
+}
+
+section#five {
+	display: table;
+}
+.five {
+	display: table-cell;
+	vertical-align: middle;
+	background-image: url(../images/cornerfive.png);
+	background-position: left top;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.five h3 {
+	color: #07b286;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+section#six {
+	display: table;
+}
+.six {
+	display: table-cell;
+	vertical-align: middle;
+}
+.square {
+	display: flex;
+}
+table img {
+	width: 40px;
+}
+.wrote {
+	/*background-image: url(../images/wrotebg.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: auto 100%;*/
+}
+.wrote img {
+	width: 100%;
+}
+section#seven {
+	display: table;
+}
+.seven {
+	display: table-cell;
+	vertical-align: middle;
+}
+.seven h3 {
+	color: #07b286;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+.seven img {
+
+}
+.seven img:hover {
+	box-shadow: -moz-box-shadow: 0 0 8px #000;
+	-webkit-box-shadow: 0 0 8px #000;
+	box-shadow: 0px 0 8px #000;
+}
+
+section#eight {
+	display: table;
+	width: 100vw !important;
+}
+.eight {
+	display: table-cell;
+	vertical-align: middle;
+	background-image: url(../images/semicolumn.png);
+	background-repeat: no-repeat;
+	background-position: 100px center;
+	background-size: auto;
+	background-color: #f6f7fb;
+}
+.eight h5 {
+	color: #07b286;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+h5.cl {
+	color: #b62f2e;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.owl-carousel .item img {
+	display: table-cell;
+	vertical-align: middle;
+}
+.item img {
+	margin: 0 25px;
+}
+section#nine {
+	display: table;
+}
+.nine {
+	display: table-cell;
+	vertical-align: middle;
+}
+.nine h5 {
+	color: #9d9d9d;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+.nine dd{
+	color: #9d9d9d;
+	font-family: 'Open Sans', sans-serif;
+}
+.nine dt {
+	color: #484848;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+
+section#ten {
+	display: table;
+}
+.ten {
+	display: table-cell;
+	vertical-align: middle;
+}
+.ten h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+}
+.ten label {
+	color: #9d9d9d;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+.ten a {
+	color: #212529;
+}
+.form-control {
+	border: none;
+	border-bottom: 2px solid #d1d1d1;
+	width: 70%;
+	border-radius: 0;
+}
+.ten img {
+	width: 70%;
+	margin-bottom: 20px;
+}
+input {
+	border-bottom-width: 70%;
+}
+
+hr {
+	margin: 50px 0;
+}
+.owl-dots {
+	display: none;
+}
+
+@media screen and (min-width: 1200px) {
+	.card {
+		padding: 30px 0;
+	}
+}
+@media screen and (max-width: 991px) {
+	.card-deck {
+		margin: 40px 50px;
+	}
+}
+
+@media screen and (max-width: 786px) {
+	section#one {
+	background-image: url(../images/banner2.png), url(../images/banner.png), url(../images/bannercorn.png);
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-position: center, right, top left;
+	background-size: 100%, 0, auto;
+	background-attachment: local, fixed, scroll;
+	color: #000;
+	display: table;
+}
+}
+
+@media screen and (max-width: 767px) {
+
+	section#one .badge {
+		margin: 15px 0;
+	}
+
+	section#three {
+	display: table;
+	background-image: url(../images/shape3.png), url(../images/backthree.png);
+	background-repeat: no-repeat,no-repeat;
+	background-position: right top,left center;
+	background-size: auto, 0%;
+}
+
+	.card-deck {
+		margin: 0;
+	}
+
+}
+
+@media screen and (max-width: 420px) {
+	
+}
+}
+
+@media screen and (max-width: 300px) {
+	
+}
+}

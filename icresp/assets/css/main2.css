@@ -1,0 +1,713 @@
+html, body {
+height: 100%;
+}
+body {
+/*font-family: "Lato";*/
+/*font-family: Arial, Helvetica, sans-serif;*/overflow-x: hidden;
+}
+/* ==========================================================================
+General styles
+========================================================================== 
+*/
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  padding-bottom: 0 0 4px;
+}
+.clicked:after {
+	border-bottom: 2px solid #ee5230;
+content: ' ';
+    text-decoration: none;
+    position: absolute;
+    width: 50%;
+    left: 0;
+    margin-left: 25%;
+    border-bottom: solid 2px #ee5230;
+    padding-bottom: 0;
+}
+.navbar-nav > li > a {
+	padding-bottom: 5px;
+}
+.min-ht-80 {
+padding: 15px 0px;
+border-bottom: 1px solid rgba(204,204,204,.5);
+margin-bottom: 0px;
+background: #fff;
+}
+.cst-nav2 a {
+color: #5c5b63 !important;
+}
+
+.btn_click_submit{
+background-color: #ee5230;
+width: 120px;
+padding: 10px 10px;
+text-align: center;
+border-radius: 25px;
+}
+
+.btn_click_submit:hover{
+background-color: #c34327 !important;
+transition: ease all 0.9s;
+}
+
+.form-control:focus {
+	outline: none !important;
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+
+
+#slider {
+
+background-repeat: no-repeat;
+background-size: cover;
+/*position: relative;*/
+height: 100vh;
+}
+.slider_01 {
+position: relative;
+top: 14em;
+text-align: center;
+left: 0em;
+}
+
+.box_shadow a:hover{
+text-decoration: none;
+}
+
+.abt-con:hover{
+box-shadow: 0 -2px 5px -2px #c8c8ca;
+box-shadow: 0 -2px 5px -2px #c8c8ca;
+box-shadow: 0 -2px 5px -2px #c8c8ca;
+box-shadow: 0 -2px 55px -2px #c8c8ca;
+transition: all ease 0.9s;
+}
+
+
+
+
+/*.ball{
+position: absolute;
+border-radius: 100%;
+opacity: 0.8;
+}*/
+.slider {
+background-image: url(../img/sliders.png);
+}
+#navbar-main2 {
+position: fixed;
+z-index: 99999;
+background-color: white;
+width: 100%;
+
+}
+
+
+
+.slider h1 {
+font-family: "Raleway";
+font-weight: 600;
+color: #5c5b63;
+margin-top: 150px;
+text-align: center;
+}
+.slider h3 {
+font-family: "Raleway";
+color: #5c5b63;
+font-weight: 600;
+font-size: 14px;
+text-align: center;
+}
+
+.togle_color{
+color: #f00 !important;
+}
+.slider_01 h1 {
+font-family: "Raleway";
+font-weight: 600;
+color: #5c5b63;
+}
+.slider_01 h3 {
+font-family: "Raleway";
+color: #5c5b63;
+font-weight: 600;
+font-size: 14px;
+}
+.demo {
+text-align: center;
+background-color: #ee5230;
+padding: 12px 0px;
+width: 200px;
+border-radius: 20px;
+margin-top: 30px;
+}
+
+.demo_btn {
+margin-top: 40px;
+}
+.right_align{
+}
+
+.demo_btn a {
+background-color: #ee5230;
+color: white;
+letter-spacing: 0.6px;
+padding-top: 11px;
+padding-bottom: 11px;
+border-radius: 20px;
+padding-left: 17px;
+padding-right: 17px;
+}
+
+.demo_btn a:hover{
+text-decoration: none;
+}
+
+.demo_btn a:focus{
+text-decoration: none;
+}
+
+
+
+
+.demo a {
+color: #FFF;
+}
+.demo a:hover {
+text-decoration: none;
+}
+/* ------------------------ ABOUT --------------------- */
+#icresp-about {
+background-color: #f8f9fb;
+padding: 50px 0px;
+}
+.icresp-about {
+color: #5c5b63;
+}
+.icresp-about p {
+padding: 27px 0px;
+font-size: 16px;
+color: #5c5b63;
+line-height: 29px;
+width: 90%;
+text-align: center;
+}
+.abt-con-wrap {
+margin-top: 20px;
+}
+.abt-con {
+background-color: #FFF;
+padding: 60px 0px 20px 0px;
+border-radius: 5px;
+text-align: center;
+min-height: 290px;
+-webkit-box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.6);
+box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.6);
+margin-bottom: 15px;
+}
+.abt-con h3 {
+color: #ee5230;
+font-weight: 300 !important;
+}
+.abt-con p {
+color: #5c5b63;
+line-height: 25px;
+}
+.modal_top_spc{
+margin-top: 110px;
+}
+/* ---------------------- PRODUCTS ---------------------- */
+
+#products {
+padding: 70px 0px 40px 0px;
+}
+#myCarousel .nav a small {
+display: block;
+}
+#myCarousel .nav {
+background: #eee;
+}
+#myCarousel .nav a {
+border-radius: 0px;
+}
+.product-dis {
+padding: 15px 0px 0px 15px;
+}
+.product-dis h2 {
+color: #474747;
+font-family: "Raleway";
+font-weight: 500;
+line-height: 36px;
+font-size: 34px;
+line-height: 46px;
+}
+.product-dis p {
+color: #5c5b63;
+line-height: 32px;
+padding: 20px 0px;
+font-size: 16px;
+font-family: "Raleway";
+font-weight: 300;
+}
+.img_icresp_banner {
+width: 725px;
+padding-top: 25px;
+}
+.readmo {
+background-color: #ee5230;
+width: 120px;
+padding: 10px 10px;
+text-align: center;
+border-radius: 25px;
+}
+.readmo a {
+color: #FFF;
+}
+.readmo a:hover {
+color: #FFF;
+text-decoration: none;
+}
+.no-bg {
+background-color: #FFF !important;
+}
+.nav-pills > li > a > small {
+color: #474747;
+}
+.nav-pills > li.active > a:after {
+background-color: transparent !important;
+border-radius: 3px !important;
+content: ' ';
+    text-decoration: none;
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    left: 0;
+    margin-left: 25%;
+    border-bottom: solid 2px #ee5230;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	background-color: transparent;
+}
+
+.nav-pills > li.active > a > small {
+color: #4ec2cc;
+}
+.nav-pills > li > a > small {
+padding-top: 10px;
+}
+.nobbg {
+margin-top: 60px;
+}
+/* ---------------------- TESTIMONIALS ---------------------- */
+
+#testimonial {
+background-color: #f4f4f4;
+padding: 100px 0px 80px 0px;
+}
+.testimonial {
+}
+.tescon {
+}
+.tescon p {
+width: 80%;
+font-family: "Raleway";
+font-size: 19px;
+line-height: 30px;
+color: #4f4f4f;
+padding: 20px 0px 10px 0px;
+}
+.tescon h4 {
+color: #d44e2a;
+font-size: 22px;
+margin-top: 20px;
+}
+.tescon h5 {
+font-size: 14px;
+color: #999999;
+}
+
+
+/* ---------------------- CLIENTS ---------------------- */
+
+
+#clients{
+margin: 50px 0px 20px 0px;
+}
+
+/* ---------------------- SUBSCRIBE ---------------------- */
+
+#subscribe{
+background-color: #63d1db;
+padding-top: 100px;
+padding-bottom: 100px;
+margin-top: 54px;
+}
+
+.subscribe h2{
+text-align: center;
+font-family: "Raleway";
+font-size: 35px;
+font-weight: 100;
+padding-bottom: 30px;
+color: #FFF;
+}
+.ssb {
+width: 325px !important;
+padding: 21px 12px !important;
+border-bottom-left-radius: 25px !important;
+border-top-left-radius: 25px !important;	 
+border-bottom-right-radius: 0px !important;
+border-top-right-radius: 0px !important;	 
+border: 0px solid #FFF !important;
+}
+.btn-ssb{
+background-color: #ff5749 !important;
+width: 105px !important;	
+padding: 11px 12px !important;	
+border-bottom-left-radius: 0px !important;
+border-top-left-radius: 0px !important;	
+border-bottom-right-radius: 25px !important;
+border-top-right-radius: 25px !important;
+border: 0px solid #FFF !important;
+margin-left: -10px !important;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+#footer{
+height: auto;
+padding: 50px 0;
+}
+.con{
+font-family: "Raleway";
+font-size: 27px;
+font-weight: 100;
+
+color: #282828;
+margin: 0px !important;
+}
+
+
+.location{
+}
+.location h3{
+font-family: "Lato";
+font-size: 15px;
+font-weight: 600;
+margin: 0px !important;
+color: #202c34;
+}
+.location p{
+font-family: "Lato";
+font-size: 14px;
+padding: 5px 0px 0px 0px;
+line-height: 21px;
+color: #202c34;
+
+}
+.mail{
+font-family: "Lato";
+font-size: 18px;
+color: #202c34;
+/*padding: 5px 0px 0px 0px;
+line-height: 21px;*/
+}
+
+
+.tab_select_icon{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.content-wrapper {
+min-height: 100%;
+position: relative;
+}*/
+
+/*.get-in-touch {
+max-width: 650px;
+margin: 0 auto;
+position: relative;
+top: 50%;
+-webkit-transform: translateY(-50%);
+transform: translateY(-50%);
+}*/
+/*.get-in-touch .title {
+text-align: center;
+font-family: Raleway, sans-serif;
+text-transform: uppercase;
+letter-spacing: 3px;
+font-size: 36px;
+line-height: 48px;
+padding-bottom: 48px;
+}*/
+.title{
+
+
+font-family: "Raleway";
+font-size: 27px;
+font-weight: 100;
+
+color: #282828;
+margin: 0px !important;
+
+
+
+
+}
+.contact-form .form-field {
+position: relative;
+margin: 32px 0;
+}
+.contact-form .input-text {
+display: block;
+width: 60%;
+height: 36px;
+border-width: 0 0 1px 0;
+border-color: color: rgba(40,40,40,1);
+
+font-size: 18px;
+line-height: 26px;
+
+}
+.contact-form .input-text:focus {
+outline: none;
+}
+.contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+-webkit-transform: translateY(-24px);
+transform: translateY(-24px);
+}
+.contact-form .label {
+position: absolute;
+left: 20px;
+bottom: 11px;
+font-family: "Lato";
+font-size: 14px;
+line-height: 26px;
+font-weight: 100;
+
+color: rgba(40,40,40,.5);
+cursor: text;
+-webkit-transition: -webkit-transform .2s ease-in-out;
+transition: -webkit-transform .2s ease-in-out;
+transition: transform .2s ease-in-out;
+transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+.contact-form .submit-btn {
+display: inline-block;
+background-color: #000;
+color: #fff;
+font-family: Raleway, sans-serif;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 16px;
+line-height: 24px;
+padding: 8px 16px;
+border: none;
+cursor: pointer;
+}
+
+.note {
+position: absolute;
+left: 0;
+bottom: 10px;
+width: 100%;
+text-align: center;
+font-family: Lusitana, serif;
+font-size: 16px;
+line-height: 21px;
+}
+.note .link {
+color: #888;
+text-decoration: none;
+}
+.note .link:hover {
+text-decoration: underline;
+}
+textarea {
+	resize: none;
+	height: 15vh !important;
+	width: 90%;
+}
+.form-control {
+	box-shadow: none;
+}
+
+#rqst {
+	padding: 10px 0 20px 0;
+}
+
+#btn2 {
+	border-radius: 25px;
+	width: 120px;
+	margin: 10px 15px;
+}
+
+#adjst {
+	margin: 10px 0;
+}
+
+#Requestdemo {
+	background-color: #f5f5f5;
+}
+
+.parent {
+	position: relative;
+	width: 100%;
+}
+
+.child-left {
+	width: 50%;
+}
+.child-right {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+.slider h1 {
+margin-top: 100px;
+}
+}
+
+
+/*===================================================PRODUCT PAGE CSS=============================================================*/
+
+#Van_Delivery_Banner{
+margin-top: 85px;
+}
+.pro_head {
+font-family: "Raleway";
+font-size: 32px;
+padding-top: 23px;
+padding-bottom: 11px;
+}
+.pro_paragra {
+font-family: "Raleway";
+line-height: 32px;
+font-size: 15px;
+color: black;
+font-weight: normal;
+}
+.module_list_1 ul li {
+line-height: 30px;
+font-size: 16px;
+color: #515151;
+}
+.pdng_lft{
+padding-left: 20px;
+}
+.colege_baner{   background-image: url(../img/college_banner.jpg);
+background-size: cover;
+background-repeat:no-repeat;
+height: 400px;
+width: 100%;
+}
+
+.main_head_feats {
+font-size: 25px;
+font-weight: 500;
+letter-spacing: 0.4px;
+padding-bottom: 0;
+padding-top: 22px;
+}
+.c_loud_e_Rp {
+font-weight: 400;
+letter-spacing: 0.4px;
+text-align: center;
+font-size: 17px;
+}
+.border_add_rect {
+padding: 10px;
+border: 1px solid #eee;
+}
+.navbar-brand {
+    float: left;
+    height: 20px;
+    padding: 8px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+#client {
+	text-align: center;
+}
+#clientimg {
+	margin-bottom: 7px;
+}
+
+@media (max-width: 991px) {
+	#footer {
+		text-align: center;
+		padding: 30px 0;
+	}
+	.contact-form .input-text {
+		width: 100%;
+	}
+	.child-right {
+		position: unset;
+		width: 100%;
+	}
+	#Requestdemo {
+		margin-top: 30px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 799px) {
+	#footer {
+		padding: 0;
+		text-align: center;
+	}
+}
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: 32px;
+	}
+	.nav > li {
+		text-align: center;
+	}
+	.ssb {
+	width: 65% !important;
+	border-bottom-left-radius: 25px !important;
+	border-top-left-radius: 25px !important;	 
+	border-bottom-right-radius: 25px !important;
+	border-top-right-radius: 25px !important;
+	}
+	.btn-ssb{
+border-bottom-left-radius: 25px !important;
+border-top-left-radius: 25px !important;	
+border-bottom-right-radius: 25px !important;
+border-top-right-radius: 25px !important;
+}
+
+}
+
+@media (max-width: 620px) {
+	.abt-con {
+		min-height: 0;
+	}
+}
